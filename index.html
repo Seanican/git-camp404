@@ -9,6 +9,25 @@
 <body>
     <h4>Latihan GIT camp404</h4>
     <p>Tingkatkan skill versioning di sini</p>
-    <input type="button">Daftar</input>
+    <button onclick="cekProgram()">Cek Program</button>
+    <div id="program" style="visibility: hidden;">
+        <table border="1">
+            <tr>
+                <td>Program</td>
+                <td>Waktu</td>
+                <td>Daftar Program</td>
+            </tr>
+            <tr>
+                <td>GIT PERSONAL PROJECT</td>
+                <td>20 Desember 2023</td>
+                <td><input type="submit">Daftar</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function cekProgram() {
+            document.getElementById("program").style.visibility = "visible"
+        }
+    </script>
 </body>
 </html>
